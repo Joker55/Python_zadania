@@ -8,12 +8,12 @@ while (i < 50):
 
 print (numbers)
 
-		
+
 def sortingF(list):
-	less = []
 	equal = []
+	less = []
 	greater = []
-	
+
 	if len(list) > 1:
 		pivot = list[0]
 		for x in list:
@@ -26,7 +26,7 @@ def sortingF(list):
 		return sortingF(less)+equal+sortingF(greater)
 	else:
 		return list
-	
+
 print ('Sorted items: ')
 print (sortingF(numbers))
 
